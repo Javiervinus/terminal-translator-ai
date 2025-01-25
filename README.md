@@ -1,6 +1,7 @@
 # TraductorAI terminal
 
 ¡Bienvenido/a a **TraductorAI**! Este proyecto es un traductor de español-inglés (y viceversa) que aprovecha la inteligencia artificial para traducciones mas naturales.  
+
 Utiliza el sdk de OpenAI por lo que puedes usar sus modelos (y también es compatible con modelos de [Deepseek](https://deepseek.com/)) para ofrecer traducciones rápidas y fluidas. Además, incluye la opción de procesar la respuesta en modo de _streaming_.  
 **No necesitas indicar el idioma de origen, ya que el sistema lo detecta automáticamente.**
 
