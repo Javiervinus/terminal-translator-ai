@@ -38,7 +38,7 @@ Aquí hay un par de ejemplos que ilustran la traducción de español a inglés y
 
    ```bash
    git clone https://github.com/Javiervinus/terminal-translator-ai.git
-   cd TraductorAI
+   cd terminal-translator-ai
    ```
 
 2. **Instalar dependencias**:
@@ -88,7 +88,7 @@ $ pnpm start
 
 TraductorAI
 Modo: Respuesta completa
-Modelo: gpt-3.5-turbo
+Modelo: gpt-4o
 
 ➤ Escribe: Hola, ¿cómo estás?
 Traduciendo...
