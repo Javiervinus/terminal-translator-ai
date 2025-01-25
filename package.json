@@ -1,0 +1,22 @@
+{
+  "name": "terminal-translator-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch --env-file .env index.mjs",
+    "start": "node --env-file .env index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "openai": "^4.80.1"
+  },
+  "resolutions": {
+    "whatwg-url": "^14.1.0"
+  }
+}
