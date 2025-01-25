@@ -2,8 +2,10 @@
 
 ¡Bienvenido/a a **TraductorAI**! Este proyecto es un traductor de español-inglés (y viceversa) que aprovecha la inteligencia artificial para traducciones mas naturales.  
 
-Utiliza el sdk de OpenAI por lo que puedes usar sus modelos (y también es compatible con modelos de [Deepseek](https://deepseek.com/)) para ofrecer traducciones rápidas y fluidas. Además, incluye la opción de procesar la respuesta en modo de _streaming_.  
-**No necesitas indicar el idioma de origen, ya que el sistema lo detecta automáticamente.**
+Utiliza el sdk de OpenAI por lo que puedes usar sus modelos (y también es compatible con modelos de [Deepseek](https://deepseek.com/)) para ofrecer traducciones rápidas y fluidas. Además, incluye la opción de procesar la respuesta en modo de _streaming_.
+
+> [!NOTE]
+> **No necesitas indicar el idioma de origen, ya que el sistema lo detecta automáticamente.**
 
 ## Vista previa de la aplicación
 
@@ -60,19 +62,19 @@ Aquí hay un par de ejemplos que ilustran la traducción de español a inglés y
 
 4. **Ejecutar la aplicación**:
    - Modo estándar:
-     `bash
-pnpm start
-     `
+     ```bash
+     pnpm start
+     ```      
      Ingresa tu texto y verás la traducción completa.
    - Modo streaming:
-     `bash
-pnpm start -- --stream
-     `
+     ```bash
+      pnpm start --stream
+     ```
      Verás la traducción aparecer progresivamente.
    - Modo desarrollo con recarga:
-     `bash
-pnpm dev
-     `
+     ```bash
+      pnpm dev
+     ```
      El script se recargará automáticamente con cambios en el código, aprovechando la opción `--watch`.
 
 ## Uso
