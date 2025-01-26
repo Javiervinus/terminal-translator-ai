@@ -1,11 +1,10 @@
 # TraductorAI terminal
 
-¡Bienvenido/a a **TraductorAI**! Este proyecto es un traductor de español-inglés (y viceversa) que aprovecha la inteligencia artificial para traducciones mas naturales.  
+¡Bienvenido/a a **TraductorAI**! Este proyecto es un traductor de español-inglés (y viceversa) que aprovecha la inteligencia artificial para traducciones mas naturales.
 
 Utiliza el sdk de OpenAI por lo que puedes usar sus modelos (y también es compatible con modelos de [Deepseek](https://deepseek.com/)) para ofrecer traducciones rápidas y fluidas. Además, incluye la opción de procesar la respuesta en modo de _streaming_.
 
-> [!NOTE]
-> **No necesitas indicar el idioma de origen, ya que el sistema lo detecta automáticamente.**
+> [!NOTE] > **No necesitas indicar el idioma de origen, ya que el sistema lo detecta automáticamente.**
 
 ## Vista previa de la aplicación
 
@@ -61,14 +60,17 @@ Aquí hay un par de ejemplos que ilustran la traducción de español a inglés y
    - Crea un archivo `.env` en la raíz del proyecto con tus credenciales de OpenAI o Deepseek y la URL base.
 
 4. **Ejecutar la aplicación**:
-   - Modo estándar:
+
+   El streaming esta activado por defecto, pero puedes desactivarlo con `--no-stream`.
+
+   - Modo estándar (streaming activado):
      ```bash
      pnpm start
-     ```      
+     ```
      Ingresa tu texto y verás la traducción completa.
-   - Modo streaming:
+   - Modo no streaming:
      ```bash
-      pnpm start --stream
+      pnpm start --no-stream
      ```
      Verás la traducción aparecer progresivamente.
    - Modo desarrollo con recarga:

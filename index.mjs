@@ -3,7 +3,7 @@ import chalk from "chalk";
 import OpenAI from "openai";
 import readline from "readline";
 
-const useStream = process.argv.includes("--stream");
+const useStream = !process.argv.includes("--no-stream");
 
 const AI_CONFIG = {
   baseURL: process.env.BASE_URL,
@@ -25,7 +25,7 @@ const rl = readline.createInterface({
 const welcomeMessage = boxen(
   chalk.bold.blue("Traduce con inteligencia artificial") +
     "\n" +
-    'Puedes activar el streaming agregando "--stream" al comando' +
+    'Puedes desactivar el streaming agrega "--no-stream" al comando' +
     "\n" +
     'Para salir envía "exit"' +
     "\n" +

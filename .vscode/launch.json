@@ -4,7 +4,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Normal",
+      "name": "Normal (stream)",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["dev"],
       "console": "integratedTerminal"
@@ -12,9 +12,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Stream",
+      "name": "No stream",
       "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["dev", "--stream"],
+      "runtimeArgs": ["dev", "--no-stream"],
       "console": "integratedTerminal"
     }
   ]
