@@ -20,7 +20,7 @@ Aquí hay un par de ejemplos que ilustran la traducción de español a inglés y
 - **Traducciones contextuales**: El sistema considera expresiones coloquiales y dobles sentidos.
 - **Integración flexible**: Además de [OpenAI](https://openai.com/), también se puede configurar con modelos de [Deepseek](https://deepseek.com/) siempre que la API sea compatible.
 - **Uso de variables de entorno**: Controla tu propia configuración con `.env`.
-- **Soporte para Node >= 18**: Se utiliza `--watch` para recargar en tiempo real, lo cual requiere versiones más recientes de Node.
+- **Soporte para Node >= 20.6**: Se utiliza `--watch` para recargar en tiempo real y --env-file para cargar variables de entorno.
 
 ## Requisitos de instalación
 

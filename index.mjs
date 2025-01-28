@@ -100,7 +100,7 @@ const showUsage = (usage) => {
 };
 const translateStream = async (text) => {
   const messages = [...SYSTEM_MESSAGES, { role: "user", content: text }];
-
+  const timestamp = new Date();
   const stream = await openai.chat.completions.create({
     messages: messages,
     model: AI_CONFIG.model,
@@ -111,6 +111,9 @@ const translateStream = async (text) => {
 
   let fullResponse = "";
   let usage = null;
+
+  const diff = new Date() - timestamp;
+  console.log(chalk.green(`\nTraducción en ${diff}ms:`));
 
   for await (const chunk of stream) {
     const content = chunk.choices[0]?.delta?.content || "";
@@ -130,12 +133,17 @@ const translateStream = async (text) => {
 
 const translate = async (text) => {
   const messages = [...SYSTEM_MESSAGES, { role: "user", content: text }];
+  const timestamp = new Date();
 
   const completion = await openai.chat.completions.create({
     messages: messages,
     model: AI_CONFIG.model,
     temperature: 1.3,
   });
+  const diff = new Date() - timestamp;
+
+  console.log(chalk.green(`\nTraducción en ${diff}ms:`));
+
   return {
     message: completion.choices[0].message.content,
     usage: completion.usage,
