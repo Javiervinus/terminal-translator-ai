@@ -4,7 +4,8 @@
 
 Utiliza el sdk de OpenAI por lo que puedes usar sus modelos (y también es compatible con modelos de [Deepseek](https://deepseek.com/)) para ofrecer traducciones rápidas y fluidas. Además, incluye la opción de procesar la respuesta en modo de _streaming_.
 
-> [!NOTE] > **No necesitas indicar el idioma de origen, ya que el sistema lo detecta automáticamente.**
+> [!NOTE]
+> **No necesitas indicar el idioma de origen, ya que el sistema lo detecta automáticamente.**
 
 ## Vista previa de la aplicación
 
